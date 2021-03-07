@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  overflow-x: hidden;
+  font-family: "Montserrat";
+}
+body .hide {
+  overflow: hidden;
+}
+#logo {
+  color: white;
+
+  font-size: 3rem;
+  text-decoration: none;
+}
+.nav-header {
+  margin: auto;
+  width: 90vw;
+  display: flex;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+.burger {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 2.5rem;
+  width: 3rem;
+}
+.line1,
+.line2 {
+  background-color: aliceblue;
+  height: 3px;
+  border-radius: 2rem;
+  width: 3.5rem;
+  pointer-events: none;
+}
+
+.navbox {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+  position: fixed;
+  z-index: -1;
+  transform: translateY(-100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  height: 90vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: calc(1.4rem + 1vw);
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  padding: 1rem;
+  cursor: pointer;
+}
+
+h2 {
+  position: absolute;
+  font-size: 15vw;
+  z-index: -1;
+  font-family: "montserrat";
+  background: -webkit-linear-gradient(to right, #ff4d5a, #8c2b7a, #072142);
+  background: linear-gradient(to right, #ff4d5a, #8c2b7a, #072142);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
